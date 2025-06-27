@@ -1,0 +1,20 @@
+name: membangun-model-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10 
+  - pip
+  - pip:
+      - xgboost
+      - mlflow
+      - dagshub
+      - scikit-learn
+      - pandas
+      - numpy
+      - matplotlib
+      - seaborn
+      - joblib
+      - protobuf
+      - cloudpickle
+      - sqlalchemy
