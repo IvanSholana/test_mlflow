@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import os
 import mlflow
 
-mlflow.set_tracking_uri("file://./MLproject/mlruns")
+mlflow.set_tracking_uri(os.environ["MLFLOW_TRACKING_URI"])
 
 df = pd.read_csv("./personality_preprocessing/personality_preprocessing.csv")
 
