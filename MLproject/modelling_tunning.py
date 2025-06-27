@@ -13,8 +13,7 @@ import matplotlib.pyplot as plt
 import os
 import mlflow
 
-
-mlflow.set_tracking_uri("http://localhost:5000")
+mlflow.set_tracking_uri("file://./mlruns")  # MLruns akan muncul di artifacts
 
 df = pd.read_csv("./personality_preprocessing/personality_preprocessing.csv")
 
